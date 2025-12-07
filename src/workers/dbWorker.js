@@ -17,7 +17,7 @@ self.onmessage = async (e) => {
       let newDb = null;
       try {
           const SQL = await initSqlJs({
-            locateFile: file => `/sql-wasm.wasm`
+            locateFile: file => `sql-wasm.wasm`
           });
 
           newDb = new SQL.Database(new Uint8Array(fileBuffer));
