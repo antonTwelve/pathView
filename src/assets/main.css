@@ -1,0 +1,21 @@
+@import './base.css';
+
+/* Overriding default vue layout constraints */
+#app {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: block;
+    place-items: unset;
+  }
+  #app {
+    display: block;
+    padding: 0;
+    grid-template-columns: none;
+  }
+}
